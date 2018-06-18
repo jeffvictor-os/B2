@@ -1,0 +1,4 @@
+#!/usr/bin/bash
+url=`curl -s -d "press=OK"  localhost | grep action | awk -F = '{print $3}' | awk -F \" '{print $2}'`
+curl -s localhost/$url | grep -q "Thanks for clicking"
+
