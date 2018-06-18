@@ -1,0 +1,4 @@
+deployment:
+  prod:
+    branch: master
+    appname: jv-test2
