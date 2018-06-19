@@ -6,6 +6,6 @@ jobs:
       - image: httpd:latest
     steps:
       - checkout
-      - run: ls /usr/locla/apache2/htdocs
+      - run: ls /usr/local/apache2/htdocs
       - run: curl localhost:8080
       - run: python success.py
