@@ -8,5 +8,6 @@ jobs:
       - checkout
       - run: ls /usr/local/apache2/htdocs
 #     - run: /usr/bin/sudo apt-get install curl
-      - run: wget localhost:8080
-      - run: python success.py
+#     - run: wget localhost:8080
+      - run: /etc/init.d/apache2 start
+#     - run: python success.py
