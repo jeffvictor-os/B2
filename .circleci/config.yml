@@ -6,7 +6,7 @@ jobs:
       - image: httpd:latest
     steps:
       - checkout
-      - run: ls /usr/local/apache2/htdocs
+      - run: cat /usr/local/apache2/htdocs
       - run: ip addr show
       - run: apt-get update
       - run: apt-get -y install curl
@@ -14,4 +14,4 @@ jobs:
       - run: httpd 
       - run: sleep 5
       - run: ps -ef | grep httpd
-      - run: sleep 120
+      - run: curl localhost
