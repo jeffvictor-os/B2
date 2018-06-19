@@ -7,12 +7,7 @@ jobs:
     steps:
       - checkout
       - run: ls /usr/local/apache2/htdocs
-#     - run: /usr/bin/sudo apt-get install curl
-#     - run: wget localhost:8080
-#     - run: /etc/init.d/apache2 start
-#     - run: python success.py
       - run: ip addr show
-      - run: /sbin/init
       - run: sleep 5
       - run: ps -ef | grep httpd
-      - run: sleep 120
+      - run: httpd -DFOREGROUND
