@@ -10,4 +10,7 @@ jobs:
       - run: ip addr show
       - run: sleep 5
       - run: ps -ef | grep httpd
-      - run: httpd -DFOREGROUND
+      - run: httpd 
+      - run: sleep 5
+      - run: ps -ef | grep httpd
+      - run: sleep 120
