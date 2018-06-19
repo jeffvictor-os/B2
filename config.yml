@@ -5,4 +5,4 @@ jobs:
       - image: debian
     steps:
       - checkout
-      - run: python getpage.sh
+      - run: python success.py
