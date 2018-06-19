@@ -12,6 +12,7 @@ jobs:
 #     - run: /etc/init.d/apache2 start
 #     - run: python success.py
       - run: ip addr show
-      - run: sleep 10
+      - run: /sbin/init
+      - run: sleep 5
       - run: ps -ef | grep httpd
       - run: sleep 120
