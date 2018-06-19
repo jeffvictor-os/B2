@@ -6,4 +6,5 @@ jobs:
       - image: httpd:latest
     steps:
       - checkout
+      - run: curl localhost:8080
       - run: python success.py
