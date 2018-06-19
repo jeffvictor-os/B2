@@ -3,7 +3,7 @@ jobs:
   build:
     docker: 
       - image: circleci/python:3.6.1
+      - image: httpd:latest
     steps:
       - checkout
-      - run: apt-get install httpd
       - run: python success.py
