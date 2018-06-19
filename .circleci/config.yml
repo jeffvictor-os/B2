@@ -8,7 +8,8 @@ jobs:
       - checkout
       - run: ls /usr/local/apache2/htdocs
       - run: ip addr show
-      - run: sleep 5
+      - run: apt-get update
+      - run: apt-get -y install curl
       - run: ps -ef | grep httpd
       - run: httpd 
       - run: sleep 5
